@@ -1,0 +1,62 @@
+<!-- dialog_custom.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextFieldName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/translucent_background"
+        android:drawableLeft="@drawable/edit"
+        android:drawablePadding="12dp"
+        android:hint="Name"
+        android:maxLines="1"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextFieldPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/translucent_background"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="12dp"
+        android:hint="Phone"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextFieldEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/translucent_background"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="12dp"
+        android:hint="Email"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextFieldCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/translucent_background"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="12dp"
+        android:hint="City"
+        android:maxLines="1"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <!-- Add more EditText fields as needed -->
+
+</LinearLayout>

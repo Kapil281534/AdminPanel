@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "143025724128",
+    "project_id": "admin-panel-flipr",
+    "storage_bucket": "admin-panel-flipr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143025724128:android:e1b05e9334576b24da0e85",
+        "android_client_info": {
+          "package_name": "com.anchardo.adminpanel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTxHr2MqmBYEOueX3mQLvZJB8eMhXv1pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

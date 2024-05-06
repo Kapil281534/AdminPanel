@@ -1,0 +1,16 @@
+<!-- nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rate_us"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/nav_feature_2"
+            android:title="Visit Our Website" />
+
+        <item
+            android:id="@+id/nav_log_out"
+            android:title="Log Out" />
+        <!-- Add more items as needed -->
+    </group>
+</menu>

@@ -1,0 +1,46 @@
+<!-- nav_header.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="72dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/img_1" />
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/font_new"
+        android:paddingLeft="8dp"
+        android:text="Welcome User"
+        android:textColor="#0a0a0a"
+
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewUserEmail"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="@font/font_new"
+        android:paddingLeft="8dp"
+
+        android:text="Admin Panel"
+        android:textColor="#373737"
+        android:textSize="17dp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="3dp" />+
+
+</LinearLayout>

@@ -1,0 +1,256 @@
+<!-- activity_order_details.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:elevation="40dp"
+
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:visibility="visible"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="40dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8CBEEF"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+
+                android:layout_marginBottom="8dp"
+                android:text="Order Details"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Product Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/meditTextProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/translucent_background"
+                android:hint="Product Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textViewQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductName"
+                android:layout_marginBottom="8dp"
+                android:text="Quantity"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/meditTextQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                android:background="@drawable/translucent_background"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textViewPricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewQuantity"
+                android:layout_marginBottom="8dp"
+                android:text="Pricing"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/meditTextPricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                android:background="@drawable/translucent_background"
+                android:hint="Pricing"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textViewMRP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPricing"
+                android:layout_marginBottom="8dp"
+                android:text="MRP"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/meditTextMRP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                android:background="@drawable/translucent_background"
+                android:hint="MRP"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textViewPurchaseOrderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewMRP"
+                android:layout_marginBottom="8dp"
+                android:text="Purchase ID"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewCustomerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPurchaseOrderId"
+                android:layout_marginBottom="8dp"
+                android:text="Customer ID"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/viewCustomerDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View Customer Details" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="8dp"
+                android:text="Shipping Details"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCustomerId"
+                android:layout_marginBottom="8dp"
+                android:text="Address"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/meditTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/translucent_background"
+                android:hint="Address"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textViewCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAddress"
+                android:layout_marginBottom="8dp"
+                android:text="City"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/meditTextCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/translucent_background"
+                android:hint="City"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textViewPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCity"
+                android:layout_marginBottom="15dp"
+                android:text="Pincode"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/meditTextPinCode"
+                android:layout_width="match_parent"
+                android:background="@drawable/translucent_background"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:hint="Pincode"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/editToggle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/textViewPhone"
+            android:layout_alignBottom="@id/textViewPhone"
+            android:layout_gravity="bottom|end"
+
+            android:layout_margin="16dp"
+            android:contentDescription="@string/edit"
+            android:src="@drawable/edit"
+            app:backgroundTint="@color/colorPrimary"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:pressedTranslationZ="12dp" />
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>
